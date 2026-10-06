@@ -1,0 +1,108 @@
+/* ===== RESET DASAR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #8ACFF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
+/* ===== KOTAK KALKULATOR ===== */
+.kalkulator {
+    background-color: #FFD444;
+    border-radius: 16px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+ 
+/* ===== LAYAR ===== */
+.layar {
+    background-color: #006199;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+    text-align: right;
+}
+ 
+/* Teks ekspresi kecil di atas */
+.layar-ekspresi {
+    color: #888;
+    font-size: 0.85rem;
+    min-height: 20px;
+    margin-bottom: 4px;
+}
+ 
+/* Teks angka besar */
+.layar-angka {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    word-break: break-all;
+}
+ 
+/* ===== GRID TOMBOL ===== */
+.tombol-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+ 
+/* ===== TOMBOL DASAR ===== */
+.tombol {
+    background-color: #3a3a4e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+ 
+.tombol:hover {
+    background-color: #4a4a5e;
+}
+ 
+/* ===== TOMBOL OPERATOR (+, -, *, /) ===== */
+.tombol-operator {
+    background-color: #f59e0b;
+    color: white;
+}
+ 
+.tombol-operator:hover {
+    background-color: #d97706;
+}
+ 
+/* ===== TOMBOL SAMA DENGAN (=) ===== */
+.tombol-sama {
+    background-color: #10b981;
+    color: white;
+}
+ 
+.tombol-sama:hover {
+    background-color: #059669;
+}
+ 
+/* ===== TOMBOL HAPUS (C dan ⌫) ===== */
+.tombol-hapus {
+    background-color: #ef4444;
+    color: white;
+}
+ 
+.tombol-hapus:hover {
+    background-color: #dc2626;
+}
+ 
+/* ===== TOMBOL NOL (lebar 2 kolom) ===== */
+.tombol-nol {
+    grid-column: span 2;
+}
